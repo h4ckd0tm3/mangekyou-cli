@@ -1,0 +1,8 @@
+beautifulsoup4
+PyVirtualDisplay
+selenium
+face_recognition
+colorlog
+yapsy
+fpdf
+gitpython

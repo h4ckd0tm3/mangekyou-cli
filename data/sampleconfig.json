@@ -1,0 +1,15 @@
+{
+  "log_level": "DEBUG",
+  "plugins_folder": "DEFAULT",
+  "temp_folder": "DEFAULT",
+  "facematch": {
+    "tolerance": 0.6,
+    "location_model": "cnn",
+    "encoding_model": "large",
+    "encoding_jitter": 5
+  },
+  "credentials": {
+    "username": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD"
+  }
+}
