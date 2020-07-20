@@ -3,6 +3,7 @@ import os
 from git import Repo
 from pathlib import Path
 from setuptools import setup
+from setuptools import find_packages
 from mangekyou.version import __version__
 
 from setuptools.command.develop import develop
@@ -35,7 +36,7 @@ class PostInstallCommand(install):
     """Post-installation for installation mode."""
 
     def run(self):
-        develop.run(self)
+        install.run(self)
         dotfolder = Path.home() / ".mangekyou"
         dotfolder.mkdir(parents=True, exist_ok=True)
 
@@ -64,7 +65,7 @@ setup(
     description="OSINT Automation Framework - Dousatsugan.",
     version=__version__,
     author="Marcel Schnideritsch",
-    packages=["mangekyou"],
+    packages=find_packages(),
     entry_points={
         "console_scripts": [
             "mangekyou = mangekyou.cli.main:main",

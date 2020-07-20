@@ -3,3 +3,4 @@ build/
 dist/
 venv/
 mangekyou.egg-info/
+**/__pycache__/
